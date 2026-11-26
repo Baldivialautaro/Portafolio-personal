@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Baldivia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="inicio">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="#inicio" class="logo">Baldivia</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi" class="seccion">
+            <h2>Sobre mí</h2>
+            <div class="sobre-contenido">
+                <img src="assets/foto-perfil.jpg" alt="Foto de perfil de Baldivia" class="foto-perfil">
+                <div class="sobre-texto">
+                    <p>Soy estudiante de programación con interés en el desarrollo web. Me gusta crear interfaces
+                        claras, ordenadas y fáciles de usar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="seccion seccion-gris">
+            <h2>Skills / Lenguajes</h2>
+            <ul class="lista-skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="proyectos" class="seccion">
+            <h2>Proyectos</h2>
+            <div class="grid-proyectos">
+                <article class="tarjeta">
+                    <a href="https://baldivialautaro.github.io/aetheria-inmobiliaria/" target="_blank" rel="noreferrer">
+                        <img src="assets/proyecto1.png"
+                            alt="Captura de la página principal de AETHERIA Inmobiliaria Futurista">
+                    </a>
+                    <div class="tarjeta-contenido">
+                        <h3>AETHERIA — Inmobiliaria Futurista</h3>
+                        <p>Landing page corporativa minimalista en estética azul y negro, construida con HTML5 semántico
+                            y CSS puro (Grid y Flexbox).</p>
+                        <div class="tarjeta-enlaces">
+                            <a href="https://github.com/Baldivialautaro/aetheria-inmobiliaria" class="btn"
+                                target="_blank" rel="noreferrer">Código</a>
+                            <a href="https://baldivialautaro.github.io/aetheria-inmobiliaria/" class="btn"
+                                target="_blank" rel="noreferrer">Ver demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <a href="https://baldivialautaro.github.io/kura-coffee-bar/" target="_blank" rel="noreferrer">
+                        <img src="assets/proyecto2.jpg"
+                            alt="Captura de la página principal de KURA Specialty Coffee and Listening Bar">
+                    </a>
+                    <div class="tarjeta-contenido">
+                        <h3>KURA — Specialty Coffee &amp; Listening Bar</h3>
+                        <p>Sitio web editorial cálido para cafetería de especialidad y barra de vinilos, maquetado con
+                            HTML5 semántico y CSS Grid/Flexbox.</p>
+                        <div class="tarjeta-enlaces">
+                            <a href="https://github.com/Baldivialautaro/kura-coffee-bar" class="btn"
+                                target="_blank" rel="noreferrer">Código</a>
+                            <a href="https://baldivialautaro.github.io/kura-coffee-bar/" class="btn"
+                                target="_blank" rel="noreferrer">Ver demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion seccion-gris">
+            <h2>Contacto</h2>
+            <form class="form-contacto" action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2026 Baldivia Lautaro. Todos los derechos reservados.</p>
+        <nav aria-label="Redes y contacto">
+            <ul class="pie-enlaces">
+                <li><a href="https://github.com/Baldivialautaro" target="_blank" rel="noreferrer">GitHub</a></li>
+                <li><a href="https://www.instagram.com/baldivialautaro_/?hl=es-la" target="_blank"
+                        rel="noreferrer">Instagram</a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=baldivialautaro@gmail.com" target="_blank"
+                        rel="noreferrer">Email</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
